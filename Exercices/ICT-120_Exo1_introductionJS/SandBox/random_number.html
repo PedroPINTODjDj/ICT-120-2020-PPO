@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Number</title>
+</head>
+<body>
+<h1 id="h1Main" style="background-color: orange">Ramdom Number</h1>
+
+<script>
+    nombre = prompt("quel nombre veux-tu? tu dois trouver un numero entre 0 et 9");
+    nombremyster = Math.floor(Math.random() * 10);
+    compteur = 1;
+    while (nombre != nombremyster) {
+        nombre = prompt("quel nombre veux-tu?");
+        compteur++
+        if (nombre == nombremyster) {
+            document.write("tu as trouvé le bon numero en " + compteur + " essaits");
+        }
+    }
+
+
+</script>
+</body>
+</html>

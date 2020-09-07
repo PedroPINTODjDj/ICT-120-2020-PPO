@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ICT-120 Start</title>
+
+</head>
+<body>
+<h1 id="h1Main" style="background-color: grey">ICT-120_1er exo JS</h1>
+</body>
+<script>
+    console.warn("c'est la merde");
+    console.error("non c'est vraiment la merde");
+    console.error("je vais te posser une question");
+    base = prompt("quel livret veux-tu?");
+    alert("tu as dit "+base);
+    document.write("<h2>Livret "+ base +"</h2>");
+    for(i=1; i <= 10; i++){
+        document.write(i + " x "+base + " = "+ i*base + "<br>" );
+    }
+    h1Main.style.backgroundColor = prompt("Quelle est ta couleur préférée");
+
+    document.write("au bol, je dirait ..." + Math.floor(Math.random()*100));
+
+</script>
+</html>
